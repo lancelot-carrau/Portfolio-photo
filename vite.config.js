@@ -15,4 +15,5 @@ export default defineConfig({
     },
   },
   base: '/Portfolio-photo/', // VERY IMPORTANT: Set the base path
+  publicPath: '/Portfolio-photo/'
 })

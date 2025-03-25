@@ -97,7 +97,7 @@
       <!-- Footer -->
       <footer>
         <div class="container">
-          <p class="footer-text">© 2023 Lancelot Carrau · Développeur Web & Photographe</p>
+          <p class="footer-text">© 2025 Lancelot Carrau · Développeur Web & Photographe</p>
         </div>
       </footer>
   
