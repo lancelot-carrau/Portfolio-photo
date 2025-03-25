@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://photo.freelancelot.fr",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write src/",
-    "deploy": "sh deploy.sh"
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",

@@ -14,6 +14,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/Portfolio-photo/', // VERY IMPORTANT: Set the base path
-  publicPath: '/Portfolio-photo/'
+  base: '/', // VERY IMPORTANT: Set the base path
 })
