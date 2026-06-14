@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancelot Carrau - Photography</title>
+    <meta name="description" content="Portfolio photographique de Lancelot Carrau. Découvrez des voyages à travers le Japon, la France, la Polynésie, l'Italie et l'Espagne.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <!-- LANDING PAGE -->
+    <section id="landing">
+        <div class="landing-backgrounds">
+            <div class="bg-image" id="bg-japon" style="background-image: url('https://wsrv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthe-gadget-lab%2FPhotos-Selec%2Frefs%2Fheads%2Fphoto%2Fphotos%2Fjapon%2Fjapon-01.jpg&w=1600&output=webp&q=80');"></div>
+            <div class="bg-image" id="bg-france" style="background-image: url('https://wsrv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthe-gadget-lab%2FPhotos-Selec%2Frefs%2Fheads%2Fphoto%2Fphotos%2Ffrance%2Ffrance-03.jpg&w=1600&output=webp&q=80');"></div>
+            <div class="bg-image" id="bg-polynesie" style="background-image: url('https://wsrv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthe-gadget-lab%2FPhotos-Selec%2Frefs%2Fheads%2Fphoto%2Fphotos%2Fpolynesie%2Fpolynesie-06.jpg&w=1600&output=webp&q=80');"></div>
+            <div class="bg-image" id="bg-italie" style="background-image: url('https://wsrv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthe-gadget-lab%2FPhotos-Selec%2Frefs%2Fheads%2Fphoto%2Fphotos%2Fdiv%2Fitalie-01.JPEG&w=1600&output=webp&q=80');"></div>
+            <div class="bg-image" id="bg-espagne" style="background-image: url('https://wsrv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthe-gadget-lab%2FPhotos-Selec%2Frefs%2Fheads%2Fphoto%2Fphotos%2Fdiv%2Fespagne-01.jpg&w=1600&output=webp&q=80');"></div>
+        </div>
+        
+        <div class="landing-content">
+            <header class="landing-header">
+                <h1>Lancelot Carrau</h1>
+                <p>Photography</p>
+            </header>
+            
+            <nav class="destinations-nav">
+                <ul>
+                    <li data-dest="japon">Japon</li>
+                    <li data-dest="france">France</li>
+                    <li data-dest="polynesie">Polynésie</li>
+                    <li data-dest="italie">Italie</li>
+                    <li data-dest="espagne">Espagne</li>
+                </ul>
+            </nav>
+
+            <button id="enter-gallery" class="glass-btn">Entrer dans la galerie</button>
+        </div>
+    </section>
+
+    <!-- GALLERY VIEW -->
+    <section id="gallery-view" class="hidden">
+        <header class="gallery-header">
+            <div class="logo">
+                <h2>Lancelot Carrau</h2>
+                <span>Photography</span>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="japon">Japon</button>
+                <button class="filter-btn" data-filter="france">France</button>
+                <button class="filter-btn" data-filter="polynesie">Polynésie</button>
+                <button class="filter-btn" data-filter="italie">Italie</button>
+                <button class="filter-btn" data-filter="espagne">Espagne</button>
+            </div>
+            <button id="back-to-home" class="glass-btn small-btn">Accueil</button>
+        </header>
+
+        <main class="masonry-grid" id="masonry-grid">
+            <!-- Images will be injected here by JS -->
+        </main>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden">
+        <div class="lightbox-content">
+            <button id="lightbox-prev" class="lightbox-nav">&larr;</button>
+            <img id="lightbox-img" src="" alt="Full screen photo">
+            <button id="lightbox-next" class="lightbox-nav">&rarr;</button>
+            <button id="lightbox-close">&times;</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
