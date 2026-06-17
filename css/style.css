@@ -162,19 +162,20 @@ h1, h2, h3 {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 4rem;
+    gap: 2vh;
+    margin-bottom: 2vh;
 }
 
 .destinations-nav li {
-    font-size: clamp(3rem, 8vw, 7rem);
+    font-size: clamp(1.5rem, 8vmin, 7rem);
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-muted);
     text-transform: uppercase;
     cursor: none;
     transition: var(--transition-slow);
-    line-height: 1;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 
 .destinations-nav li:hover {
